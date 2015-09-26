@@ -1,0 +1,295 @@
+/*
+********************************************
+*    MIXINS
+********************************************
+*/
+/*
+ ********************************
+ *
+ *  Defult CSS
+ */
+.overlay-color {
+  background: -webkit-linear-gradient(left, rgba(175, 0, 234, 0.75) 10%, rgba(14, 184, 232, 0.75) 90%);
+  background: -moz-linear-gradient(left, rgba(175, 0, 234, 0.75) 10%, rgba(14, 184, 232, 0.75) 90%);
+  background: -ms-linear-gradient(left, rgba(175, 0, 234, 0.75) 10%, rgba(14, 184, 232, 0.75) 90%);
+  background: -o-linear-gradient(left, rgba(175, 0, 234, 0.75) 10%, rgba(14, 184, 232, 0.75) 90%);
+  background: linear-gradient(left, rgba(175, 0, 234, 0.75) 10%, rgba(14, 184, 232, 0.75) 90%);
+}
+.btn-group .btn-fill {
+  background: #af00ea !important;
+  border-color: #af00ea !important;
+}
+.btn-group .btn-fill:hover,
+.btn-group .btn-fill:focus,
+.btn-group .btn-fill:active,
+.btn-group .btn-fill.active {
+  background: #9c00d1 !important;
+  border-color: #9c00d1 !important;
+}
+.btn-group .btn-border:hover,
+.btn-group .btn-border:focus,
+.btn-group .btn-border:active,
+.btn-group .btn-border.active {
+  background: #9c00d1 !important;
+  border-color: #9c00d1 !important;
+}
+/*
+ ********************************
+ *
+ *  Header CSS
+ *  
+ */
+.header-navbar #myNavbar .active > a {
+  border-bottom-color: #af00ea;
+}
+/*
+ ********************************
+ *
+ *  About Our Event CSS
+ *  
+ */
+.about-our-event-left h2 {
+  color: #af00ea;
+}
+.background-right-overlay-color {
+  background: rgba(175, 0, 234, 0.6);
+}
+/*
+ ********************************
+ *
+ *  our featured speaker CSS
+ *  
+ */
+.our-featured-speaker-right h2 {
+  color: #af00ea;
+}
+/*
+ ********************************
+ *
+ *  Scedule CSS
+ *  
+ */
+.scedule-main .active .btn-border {
+  background: #af00ea;
+  border-color: #af00ea;
+}
+.nav-cus .active a {
+  border-left-color: #af00ea !important;
+}
+.nav-cus a:focus,
+.nav-cus a:hover {
+  border-left-color: #af00ea !important;
+}
+/*
+ ********************************
+ *
+ *  Speakers CSS
+ *  
+ */
+.speakers-body h2 {
+  color: #af00ea;
+}
+.speakers-body .item a {
+  color: #af00ea !important;
+}
+.speakers-body .item h3 {
+  color: #af00ea;
+}
+/*
+ ********************************
+ *
+ *  Pricing Tables CSS
+ *  
+ */
+.table-single p {
+  background: #af00ea;
+}
+.pricing-tables-left .active .btn-border {
+  border-color: #af00ea;
+}
+/*
+ ********************************
+ *
+ *  Register CSS
+ *  
+ */
+.input-group .btn-fill {
+  background-color: #af00ea;
+}
+.input-group .btn-fill:hover {
+  background-color: #9c00d1;
+}
+/*
+ ********************************
+ *
+ *  Sponsore CSS
+ *  class: "sponsore"
+ *  id: "section-7"
+ */
+.sponsore-body h2 {
+  color: #af00ea;
+}
+/*
+ ********************************
+ *
+ *  Collapse CSS
+ *  
+ */
+.collapse-right h2 {
+  color: #af00ea;
+}
+.collapse-right .panel-title a .bar,
+.collapse-right .panel-title a .bar:after {
+  border-color: #af00ea;
+}
+/*
+ ********************************
+ *
+ *  Testimonial CSS
+ *  
+ */
+.testimonial-body .tab-content .active h3 {
+  color: #af00ea;
+}
+.testimonial-body .nav-cus .active a {
+  border-left-color: #af00ea !important;
+}
+/*
+ ********************************
+ *
+ *  Contact Us CSS
+ *  
+ */
+.contact-us-left h2 {
+  color: #af00ea;
+}
+.contact-us-left p a:hover,
+.contact-us-left p a:active,
+.contact-us-left p a:focus {
+  color: #af00ea;
+}
+.social-icon a:hover,
+.social-icon a:focus,
+.social-icon a:active {
+  background: #af00ea !important;
+}
+/*
+******************************************
+*
+*   Footer CSS
+*  
+*/
+footer .btn-top:hover {
+  color: #af00ea;
+}
+/************************************************
+*
+*   Blog Page css START here
+*
+*************************************************/
+/*
+ ********************************
+ *
+ *  Blog Body CSS
+ *  
+ */
+/*     blog-post CSS     */
+.blog-body .post-date {
+  color: #af00ea;
+}
+.comments span {
+  color: #af00ea;
+}
+aside ul li a:hover,
+aside ul li a:focus {
+  color: #9c00d1;
+}
+aside ul li a:hover span,
+aside ul li a:focus span {
+  color: #9c00d1;
+}
+/******************************************/
+/*  Media screen                          */
+/******************************************/
+@media (max-width: 991px) {
+  /*
+     ********************************
+     *
+     *  Scedule CSS
+     *  
+     */
+  .dropdown .label:hover,
+  .dropdown ul li:hover,
+  .dropdown .label:hover,
+  .dropdown ul li:hover {
+    background: #af00ea;
+  }
+  .dropdown .label:hover {
+    border-color: #af00ea;
+  }
+  .nav-cus .active a {
+    color: #af00ea !important;
+    border-left-color: #af00ea !important;
+  }
+  .nav-cus .active .nav-header,
+  .nav-cus .active .nav-time {
+    color: #af00ea !important;
+  }
+  /*
+     ********************************
+     *
+     *  Testimonial CSS
+     *  
+     */
+  .testimonial-body .dropdown .label:hover,
+  .testimonial-body .dropdown ul li:hover,
+  .testimonial-body .dropdown .label:hover,
+  .testimonial-body .dropdown ul li:hover {
+    background: #af00ea;
+  }
+  .testimonial-body .dropdown .label {
+    color: #af00ea;
+    border-color: #af00ea;
+  }
+}
+/*
+******************************************
+*
+*   IMAGE HOVER EFFECT CUSTOM CSS
+*    
+*/
+.view-first .mask {
+  background-color: rgba(175, 0, 234, 0.6);
+}
+.mask ul li a:hover {
+  background-color: transparent !important;
+}
+/*
+******************************************
+*
+*   NICE SCROLL CUSTOM CSS
+*    
+*/
+.nicescroll-rails > div {
+  background-color: #af00ea !important;
+}
+/*
+******************************************
+*
+*   FLEX SLIDER CSS
+*    
+*/
+a.next:hover,
+a.prev:hover {
+  background-color: #af00ea !important;
+  border-color: #af00ea;
+}
+/*
+******************************************
+*
+*   PRELOADER CSS
+*    
+*/
+.bubblingG span {
+  background: #af00ea;
+}
