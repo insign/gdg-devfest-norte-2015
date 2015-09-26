@@ -1,0 +1,90 @@
+.spinner-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #FFFFFF;
+   z-index: 99999;
+   height: 100%;
+   width: 100%;
+   overflow: hidden !important;
+}
+
+.bubblingG {
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   margin-left: -197px;
+
+   text-align: center;
+}
+
+
+@keyframes bubblingG {
+   0% {
+      width: 10px;
+      height: 10px;
+      transform: translateY(0);
+   }
+
+   100% {
+      width: 24px;
+      height: 24px;
+      transform: translateY(-10px);
+   }
+
+}
+
+/*
+HÉLIO - MY LOADING http://cssload.net/en/horizontal-bars/4
+*/
+
+.new-google-contain {
+   width: 100%;
+   margin-top: 12px;
+}
+
+.new-google-dot {
+   float: left;
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background-color: #4384F1;
+   background-position: top center;
+   margin: 0 25px;
+   animation: new-google-bounce .6s infinite ease-in-out alternate;
+}
+
+.new-google-dot:nth-child(1) {
+   animation-delay: -0.1s;
+}
+
+.new-google-dot:nth-child(2) {
+   animation-delay: -0.3s;
+   background-color: #E94236;
+
+}
+
+.new-google-dot:nth-child(3) {
+   animation-delay: -0.5s;
+   background-color: #FBBD06;
+
+}
+
+.new-google-dot:nth-child(4) {
+   animation-delay: -0.7s;
+   background-color: #33A952;
+
+}
+
+@keyframes new-google-bounce {
+   0% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(-10px);
+   }
+}
+
+///////////////////////////////////////////////////////////
