@@ -1,0 +1,17 @@
+application: devfest-norte
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /assets/css
+  static_dir: assets/css
+
+- url: /assets/img
+  static_dir: assets/img
+
+- url: /assets/js
+  static_dir: assets/js
+
+- url: /.*
+  script: index.html
