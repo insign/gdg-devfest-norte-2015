@@ -4,14 +4,23 @@ runtime: php55
 api_version: 1
 
 handlers:
-- url: /assets/css
-  static_dir: assets/css
+- url: /bootstrap
+  static_dir: bootstrap
 
-- url: /assets/img
-  static_dir: assets/img
+- url: /css
+  static_dir: css
 
-- url: /assets/js
-  static_dir: assets/js
+- url: /fonts
+  static_dir: fonts
+
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /less
+  static_dir: less
 
 - url: /.*
   script: index.html
