@@ -1,31 +1,53 @@
 <!DOCTYPE html><!--[if IE 7]>
-<html class="no-js ie7 oldie" lang="en-US"> <![endif]--><!--[if IE 8]>
-<html class="no-js ie8 oldie" lang="en-US"> <![endif]--><!--[if gt IE 8]><!-->
-<html lang="en">
+<html class="no-js ie7 oldie" lang="pt-br"> <![endif]--><!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="pt-br"> <![endif]--><!--[if gt IE 8]><!-->
+<html lang="pt-br">
 <head>
-   <link rel="stylesheet" href="css/preloader.css">
+   <style>.spinner-wrapper { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #FFF; z-index: 99999; height: 100%; width: 100%; overflow: hidden !important }
 
-   <!-- TITLE OF SITE -->
+   .bubblingG { top: 50%; left: 50%; position: absolute; margin-left: -197px; text-align: center }
+
+   @keyframes bubblingG {
+      0% { width: 10px; height: 10px; transform: translateY(0) }
+      100% { width: 24px; height: 24px; transform: translateY(-10px) }
+   }
+
+   .new-google-contain { width: 100%; margin-top: 12px }
+
+   .new-google-dot { float: left; height: 30px; width: 30px; border-radius: 50%; background-color: #4384F1; background-position: top center; margin: 0 25px; animation: new-google-bounce .6s infinite ease-in-out alternate }
+
+   .new-google-dot:nth-child(1) { animation-delay: -0.1s }
+
+   .new-google-dot:nth-child(2) { animation-delay: -0.3s; background-color: #E94236 }
+
+   .new-google-dot:nth-child(3) { animation-delay: -0.5s; background-color: #FBBD06 }
+
+   .new-google-dot:nth-child(4) { animation-delay: -0.7s; background-color: #33A952 }
+
+   @keyframes new-google-bounce {
+      0% { transform: translateY(0) }
+      100% { transform: translateY(-10px) }
+   }</style>
+
    <title>GDG DevFest Norte 2015 - Maior evento de tecnologia da região Norte</title>
-
 
    <meta charset="utf-8">
    <meta name="description" content="Evento regional que reune desenvolvedores de diversas áreas para formentar novas tecnológias com ênfase em produtos Google."/>
    <meta name="keywords" content="Google, GDG, GDG São Luís, DevFest, Norte, Nordeste"/>
    <meta name="author" content="https://helio.me">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   
+
    <meta name="robots" content="noodp,noydir"/>
    <meta name="description" content="Maior evento de tecnologia da região Norte! DevFest Norte evento organizado pelo Google Developers Group."/>
-   <link rel="canonical" href="http://norte.devfest.com.br" />
+   <link rel="canonical" href="http://norte.devfest.com.br"/>
    <link rel="publisher" href="https://plus.google.com/101017820294431097315/posts"/>
-   <meta property="og:locale" content="pt_BR" />
-   <meta property="og:type" content="website" />
-   <meta property="og:title" content="DevFest Norte" />
-   <meta property="og:description" content="Maior evento de tecnologia da região Norte! DevFest Norte evento organizado pelo Google Developers Group." />
-   <meta property="og:url" content="http://norte.devfest.com.br" />
-   <meta property="og:site_name" content="DevFest Norte" />
-   <meta property="og:image" content="http://norte.devfest.com.br/assets/img/logo-df-nt.png" />
+   <meta property="og:locale" content="pt_BR"/>
+   <meta property="og:type" content="website"/>
+   <meta property="og:title" content="DevFest Norte"/>
+   <meta property="og:description" content="Maior evento de tecnologia da região Norte! DevFest Norte evento organizado pelo Google Developers Group."/>
+   <meta property="og:url" content="http://norte.devfest.com.br"/>
+   <meta property="og:site_name" content="DevFest Norte"/>
+   <meta property="og:image" content="http://norte.devfest.com.br/assets/img/logo-df-nt.png"/>
    <meta name="twitter:card" content="summary_large_image"/>
    <meta name="twitter:description" content="Maior evento de tecnologia da região Norte! DevFest Norte evento organizado pelo Google Developers Group."/>
    <meta name="twitter:title" content="DevFest Norte"/>
@@ -34,19 +56,26 @@
    <meta name="twitter:image:src" content="http://norte.devfest.com.br/assets/img/logo-df-nt.png"/>
    <!-- Analytics -->
    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function (i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r;
+         i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                 }, i[r].l = 1 * new Date();
+         a = s.createElement(o),
+                 m = s.getElementsByTagName(o)[0];
+         a.async = 1;
+         a.src   = g;
+         m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-     ga('create', 'UA-66479421-1', 'auto');
-     ga('send', 'pageview');
+      ga('create', 'UA-66479421-1', 'auto');
+      ga('send', 'pageview');
 
-   </script>   
-   <!-- Analytics -->
+   </script>
 
    <!--   FAV AND TOUCH ICONS   -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.png">
    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon.png">
 
@@ -55,38 +84,8 @@
    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
-   <!-- BOOTSTRAP CSS -->
-   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-   <!-- FONT ICONS -->
-   <link rel="stylesheet" href="css/font-awesome.css">
-
-   <!-- CAROUSEL SLIDERS -->
-   <link rel="stylesheet" href="css/owl.carousel.css">
-   <link rel="stylesheet" href="css/owl.theme.css">
-   <link rel="stylesheet" href="css/owl.transitions.css">
-
-   <!--  CSS3 ANIMATE CSS  -->
-   <link rel="stylesheet" href="css/animate.css">
-
-   <!--  DROPDOWN CSS  -->
-   <link rel="stylesheet" href="css/fancySelect.css"/>
-
-   <!-- IMAGE HOVER EFFECT  -->
-   <link rel="stylesheet" href="css/hover-effect-animate.css"/>
-   <link rel="stylesheet" href="css/hover-effect.css"/>
-
-   <!--   CUSTOM CSS link  -->
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-
-
-   <!-- COLORS -->
-   <!--<link rel="stylesheet" href="css/colors/red.css">-->
-   <!--<link rel="stylesheet" href="css/colors/purple.css"> -->
-   <!--<link rel="stylesheet" href="css/colors/lime.css"> -->
-   <link rel="stylesheet" href="css/colors/blue.css">
-
+   <link rel="stylesheet" href="css/tudao.min.css">
+   <link rel="stylesheet" href="css/helio.min.css">
 
    <!--[if lt IE 9]>
    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -126,6 +125,7 @@
 
                   <!-- Your Icon Goes Here -->
                   <a class="navbar-brand" href="index.html">
+
                      <img src="images/logo-footer.png" class="img-responsive" alt="">
                   </a>
 
@@ -144,16 +144,16 @@
                      </li>
                      <li>
                         <a href="#section-1">Sobre</a>
-                     </li> 
+                     </li>
                      <li>
                         <a href="#section-2">São Luis</a>
-                     </li>                    
+                     </li>
                      <li>
                         <a href="#section-4">Palestrantes</a>
                      </li>
-          <!--            <li>
-                        <a href="#section-3">Schedule</a>
-                     </li> -->
+                     <!--            <li>
+                                   <a href="#section-3">Schedule</a>
+                                </li> -->
                      <li>
                         <a href="#section-5">Inscrições</a>
                      </li>
@@ -174,7 +174,10 @@
          <div class="row header-body" id="header-body">
 
             <!-- Start: CountDown area -->
-            <div class="count_down fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s"></div>
+            <div class="count_down fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">
+               <div class="text-center grand_day">07 de novembro de 2015</div>
+            </div>
+
             <!-- End: CountDown area -->
 
             <div class="clearfix"></div>
@@ -184,7 +187,9 @@
             </div>
 
             <div class="col-md-5 pera fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
-               <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xwAX9fVi9h4" frameborder="0" allowfullscreen></iframe></p>
+               <p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xwAX9fVi9h4" frameborder="0" allowfullscreen></iframe>
+               </p>
 
                <!-- Start: Button area -->
                <div class="buy-tricket btn-scroll">
@@ -217,6 +222,7 @@
                <h2>DevFest</h2>
 
                <p>Evento organizado pela comunidade de desenvolvedores Google no mundo. Atualmente conta 3153 eventos registrados espalhados pelos 5 continentes e abrange todas os produtos e as plataformas da empresa.</p>
+
                <p>O DevFest Norte é um evento organizado pelos GDGs (Google Developers Groups) de São Luis, Imperatriz, Belém, Manaus e Rondônia.</p>
 
 
@@ -251,12 +257,12 @@
                   <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
                      <span class="counter style-all">04</span> <span class="title">GDGs</span>
                   </div>
-<!--                   <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
-                     <span class="counter style-all">10</span> <span class="title">Patrocinadores</span>
-                  </div> -->
-<!--                   <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
-                     <span class="counter style-all">03</span> <span class="title">Atrações turísticas</span>
-                  </div> -->
+                  <!--                   <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
+                                       <span class="counter style-all">10</span> <span class="title">Patrocinadores</span>
+                                    </div> -->
+                  <!--                   <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time">
+                                       <span class="counter style-all">03</span> <span class="title">Atrações turísticas</span>
+                                    </div> -->
                </div>
             </div>
          </div>
@@ -302,9 +308,15 @@
          <!-- Start: Our Featured Speaker Right -->
          <div class="our-featured-speaker-right col-md-6 wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s">
             <h2>São Luís do Maranhão</h2>
-            <p>São Luís, município brasileiro e a capital do estado do Maranhão. É a única cidade brasileira fundada por <b>franceses</b>, no dia 8 de setembro de 1612, tendo sido posteriormente invadida por <b>holandeses</b>. Em seguida, foi colonizada pelos <b>portugueses</b>. Localiza-se na ilha de Upaon-Açu, no Atlântico Sul, entre as baías de São Marcos e São José de Ribamar.</p>
+
+            <p>São Luís, município brasileiro e a capital do estado do Maranhão. É a única cidade brasileira fundada por
+               <b>franceses</b>, no dia 8 de setembro de 1612, tendo sido posteriormente invadida por
+               <b>holandeses</b>. Em seguida, foi colonizada pelos
+               <b>portugueses</b>. Localiza-se na ilha de Upaon-Açu, no Atlântico Sul, entre as baías de São Marcos e São José de Ribamar.
+            </p>
+
             <p>Com cinco praias diversificadas, segundo mais antigo teatro do Brasil, várias praças, igrejas e monumentos históricos lhe permitirão um vislumbre de várias culturas europeias de séculos atrás.</p>
-        
+
          </div>
          <!-- End: Our Featured Speaker Right -->
 
@@ -348,7 +360,7 @@
 
                <p>Organizer GDG Recife</p>
 
-            </div>  
+            </div>
 
             <div class="item">
 
@@ -373,7 +385,7 @@
 
                <p>Google</p>
 
-            </div>  
+            </div>
             <div class="item">
 
                <div class="view view-first">
@@ -397,8 +409,8 @@
 
                <p>Quanto Gastei</p>
 
-            </div> 
- 
+            </div>
+
             <div class="item">
 
                <div class="view view-first">
@@ -422,7 +434,7 @@
 
                <p>@taynara</p>
 
-            </div> 
+            </div>
             <div class="item">
 
                <div class="view view-first">
@@ -470,7 +482,7 @@
 
                <p>Nexy</p>
 
-            </div>  
+            </div>
 
             <div class="item">
 
@@ -496,7 +508,7 @@
                <p>IFMA</p>
 
             </div>
-                        <div class="item">
+            <div class="item">
 
                <div class="view view-first">
                   <img src="images/speakers-img/caio.jpg" width="216" height="216" alt="">
@@ -519,7 +531,7 @@
 
                <p>WebSchool.io</p>
 
-            </div>  
+            </div>
             <div class="item">
 
                <div class="view view-first">
@@ -543,7 +555,7 @@
 
                <p>UNASUS-MA</p>
 
-            </div>  
+            </div>
             <div class="item">
 
                <div class="view view-first">
@@ -567,7 +579,7 @@
 
                <p>@Meiryanne</p>
 
-            </div>  
+            </div>
             <div class="item">
 
                <div class="view view-first">
@@ -591,7 +603,7 @@
 
                <p>Code Experts Apps</p>
 
-            </div> 
+            </div>
 
             <div class="item">
 
@@ -616,7 +628,7 @@
 
                <p>@Stephanie</p>
 
-            </div>  
+            </div>
 
          </div><!-- End: "slider" Area -->
 
@@ -646,14 +658,14 @@
                      </div>
 
                   </div> <!-- End: .table-single -->
-                  </div>
-                  </div>
-                  </div>
+               </div>
+            </div>
+         </div>
 
          <div class="tab-content green-gdg pricing-tables-right col-xs-12 col-sm-4 col-md-4">
             <div class="tab-pane active" id="pricing-table-1">
                <div class="wow fadeInDown animated" data-wow-delay="0.5s">
-                <div class="table-single">
+                  <div class="table-single">
 
                      <p>
                         <span class="currency">R$</span> <span class="rate">55,00</span> <br/>
@@ -665,15 +677,15 @@
                      </div>
 
                   </div> <!-- End: .table-single -->
-                  </div>
-                  </div>
-                  </div>
+               </div>
+            </div>
+         </div>
 
          <div class="tab-content red-gdg pricing-tables-right col-xs-12 col-sm-4 col-md-4">
             <div class="tab-pane active" id="pricing-table-1">
-                                 <div class="wow fadeInDown animated" data-wow-delay="0.5s">
+               <div class="wow fadeInDown animated" data-wow-delay="0.5s">
 
-                <div class="table-single">
+                  <div class="table-single">
 
                      <p>
                         <span class="currency">R$</span> <span class="rate">65,00</span> <br/>
@@ -685,13 +697,12 @@
                      </div>
 
                   </div> <!-- End: .table-single -->
-                  </div></div>
-               </div> <!--  -->
-
+               </div>
             </div>
-         </div><!-- Start: Pricing Table Right  -->
-      </div><!-- End: .pricing-table-body  -->
-   </div> <!-- End: .container  -->
+         </div> <!--  -->
+
+      </div>
+   </div><!-- Start: Pricing Table Right  --></div><!-- End: .pricing-table-body  --></div> <!-- End: .container  -->
 </section> <!-- End: .Pricing .Table Area, "#SECTION-5" -->
 
 <section class="sponsore" id="section-7"><!-- Start: Sponsore Area, "#SECTION-7" -->
@@ -756,13 +767,16 @@
                <p><span class="bold">Fazendo o social</span></p>
                <ul class="nav navbar-left">
                   <li>
-                     <a href="https://www.facebook.com/GDGSaoLuis?ref=bookmarks" target="_blank"><i class="fa facebook fa-facebook"></i></a>
+                     <a href="https://www.facebook.com/GDGSaoLuis?ref=bookmarks" target="_blank">
+                        <i class="fa facebook fa-facebook"></i></a>
                   </li>
                   <li>
-                     <a href="https://www.youtube.com/channel/UCM8iNRZFD_CNEh3chWaC05g" target="_blank"><i class="fa youtube fa-youtube"></i></a>
+                     <a href="https://www.youtube.com/channel/UCM8iNRZFD_CNEh3chWaC05g" target="_blank">
+                        <i class="fa youtube fa-youtube"></i></a>
                   </li>
                   <li>
-                     <a href="https://plus.google.com/+GdgsaoluisBr/posts" target="_blank"><i class="fa gplus fa-google-plus"></i></a>
+                     <a href="https://plus.google.com/+GdgsaoluisBr/posts" target="_blank">
+                        <i class="fa gplus fa-google-plus"></i></a>
                   </li>
 
                </ul>
