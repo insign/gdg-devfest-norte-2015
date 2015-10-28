@@ -53,12 +53,20 @@ crashlytics-build.properties
 
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
+=======
+# Created by .ignore support plugin (hsz.mobi)
+### AppEngine template
+# Google App Engine generated folder
+appengine-generated/
+>>>>>>> dev
 ### Example user template template
-### Example user template
 
 # IntelliJ project files
 .idea
 *.iml
 out
 gen
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
+=======
+>>>>>>> dev
